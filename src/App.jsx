@@ -1,9 +1,8 @@
 import './App.css';
-//import Navbar from './components/Navbar';
 import Addfood from './components/Addfood';
 import Fooddetails from './components/Fooddetails';
 import Home from './components/Home';
-import Navbar1 from './components/Navbar1';
+import Navbar from './components/Navbar';
 import Searchfood from './components/Searchfood';
 import Orders from './components/Orders';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -13,7 +12,7 @@ function App() {
   return (
     <Router>
     <div className="App">
-     <Navbar1/>
+     <Navbar/>
         <Switch>
 
           <Route exact path="/"> <Home/> </Route>
