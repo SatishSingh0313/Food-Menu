@@ -18,7 +18,7 @@ const Fooddetails = () => {
       })
   }
   return (
-    <div>
+    <div >
       {error && <h1>{error}</h1>}
       {pending && <div className="loader"></div>}
       {item && <div className="food-detail">
