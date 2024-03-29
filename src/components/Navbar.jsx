@@ -1,4 +1,4 @@
-import food from '../food..png'
+import food from '../food.png'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
