@@ -40,7 +40,6 @@ const Searchfood = () => {
 
             {items && <Foodlist items={items.filter((food) => { return food.foodName.toUpperCase().includes(searchKey.toUpperCase()) })} title="Search Result" />}
 
-
         </div>
     );
 }

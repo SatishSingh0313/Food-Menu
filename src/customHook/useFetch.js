@@ -1,7 +1,6 @@
-import { useEffect , useState } from "react"
+import { useEffect, useState } from "react"
 
-function useFetch(request)
-{
+function useFetch(request) {
     let [data, setData] = useState(null)
     let [pending, setPending] = useState(true)
     let [error, setError] = useState(null)
@@ -10,7 +9,7 @@ function useFetch(request)
         setTimeout(() => {
             console.log("fetch  starts");
             fetch(request)
-            
+
                 .then((response) => {
                     if (response.ok === true) {
                         return response.json()
@@ -23,10 +22,10 @@ function useFetch(request)
                 .then((data) => { setData(data); setPending(false) })
                 .catch((err) => { setError(err.message); setPending(false) })
 
-        }, 1000)
+        }, 500)
     }, [])
 
-    return {data , pending , error}
+    return { data, pending, error }
 
 }
-export default useFetch
+export default useFetch;

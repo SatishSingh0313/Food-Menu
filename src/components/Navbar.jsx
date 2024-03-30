@@ -11,7 +11,6 @@ const Navbar = () => {
             <div className="logo">
                 <Link to="/"><img src={food} alt="logo" /></Link>
                 <h1>Food Kart</h1>
-
             </div>
 
             <div className="searchbar">
