@@ -46,15 +46,15 @@ const Addfood = () => {
             <h1>Add New Food</h1>
             <hr />
             <form onSubmit={handleAddFood}>
-                <label>Food </label>   <input type="text" ref={foodname} /><br />
-                <label>Price </label>  <input type="number" step="10" ref={price} /><br />
+                <label>Food </label>   <input required type="text" ref={foodname} /><br />
+                <label>Price </label>  <input required  type="number" step="1" ref={price} /><br />
                 <label>Type</label>    <div className="type-opt">
-                    <input type="radio" name="type" value="Veg" />  <label>Veg</label><br />
-                    <input type="radio" name="type" value="Non-Veg" />  <label>Non-Veg</label>
+                    <input required type="radio" name="type" value="Veg" />  <label>Veg</label><br />
+                    <input required type="radio" name="type" value="Non-Veg" />  <label>Non-Veg</label>
                 </div>
 
-                <label>Rating</label>  <input type="number" min="1" max="10" step="0.1" ref={rating} /><br />
-                <label>Picture</label>  <input type="url" ref={picture} /><br />
+                <label>Rating</label>  <input required type="number" min="1" max="10" step="0.1" ref={rating} /><br />
+                <label>Picture</label>  <input required type="url" ref={picture} /><br />
 
 
                 <input className="btn" type="submit" value="Add food" />
