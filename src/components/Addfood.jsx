@@ -27,17 +27,19 @@ const Addfood = () => {
             }
         }
 
+        
         fetch("http://localhost:4000/items", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(newFood)
         })
             .then(() => {
-                alert("new food added");
+                   alert("new food added");
                 history.goBack();
                 // history.push("/")    redirects to home page
             })
-    }
+        
+}
 
     return (
         <div className="add-food">
