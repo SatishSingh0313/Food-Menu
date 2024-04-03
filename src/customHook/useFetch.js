@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react"
 
 function useFetch(request) {
-
+    
     let [data, setData] = useState(null)
     let [pending, setPending] = useState(true)
     let [error, setError] = useState(null)
 
     useEffect(() => {
-        
+
         setTimeout(() => {
             console.log("fetch  starts");
             fetch(request)

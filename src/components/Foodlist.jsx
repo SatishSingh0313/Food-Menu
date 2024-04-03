@@ -46,7 +46,7 @@ const Foodlist = ({ items, title }) => {
                                 <Link to={`/fooddetails${food.id}`}>
                                     <img src={food.pic} alt="" />
                                     <h2>{food.foodName}</h2>
-                                    <h4>{food.price}</h4>
+                                    <h4>Price - {food.price}</h4>
                                 </Link>
                                 {!ordersId.includes(food.id) && <button onClick={() => { handleOrders(food.id) }}> Add to Cart </button>}
 
